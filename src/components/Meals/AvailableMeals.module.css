@@ -1,0 +1,54 @@
+.meals {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.MealsLoading {
+  text-align: center;
+  color: white;
+  font: inherit;
+  background-color: transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border: 1px solid transparent;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  max-width: fit-content;
+  margin-top: 1rem;
+  margin-inline: 1rem;
+  margin-left: 27rem;
+}
+
+.MealsError {
+  text-align: center;
+  color: red;
+  font: inherit;
+  background-color: transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border: 1px solid transparent;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  max-width: fit-content;
+  margin-top: 1rem;
+  margin-inline: 1rem;
+  margin-left: 27rem;
+}
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
